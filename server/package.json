@@ -1,0 +1,14 @@
+{
+  "name": "-nv-webblong-server",
+  "version": "1.0.0",
+  "description": "nodejs vuejs webblog server (back end)",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "supathida saikaew",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
