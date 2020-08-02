@@ -1,4 +1,3 @@
-  
 <template>
     <div>
         <h1>Edit User</h1>
@@ -21,6 +20,7 @@
 </template>
 <script>
 import UsersService from '@/services/UsersService'
+
 export default {
     data () {
     return {
