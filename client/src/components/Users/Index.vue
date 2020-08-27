@@ -12,7 +12,7 @@
                 <button v-on:click="navigateTo('/user/'+user.id)">ดูข้อมูล</button>
                 <button v-on:click="navigateTo('/user/edit/'+ user.id)">แก้ไขข้อมูล</button>
                 <button v-on:click="deleteUser(user)">ลบข้อมูล</button>
-                <p><button v-on:click="logout">Logout</button></p>
+                
             <hr>
         </div>
     </div>
@@ -33,14 +33,8 @@
             navigateTo (route) {
                 this.$router.push(route)
             },
-            logout () {
-                this.$store.dispatch('setToken', null)
-                this.$store.dispatch('setUser', null)
-                this.$router.push({
-                    name: 'login'
-                })
-            },
-            async deleteUser (user) {
+            
+                async deleteUser (user) {
                 try {
                     await UsersService.delete(user)
                     this.refreshData()
